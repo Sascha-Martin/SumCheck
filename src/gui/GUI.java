@@ -105,12 +105,6 @@ public class GUI extends Application {
 		fileDrop.setOnDragDropped(e -> {
 			String filePath = e.getDragboard().getFiles().stream().limit(1).map(File::getAbsolutePath).collect(Collectors.joining("\n"));
 			
-			// Special case for Linux
-			if(os.equals("LINUX")) {
-				filePath = filePath.substring(7, filePath.indexOf("\r"));
-				filePath = filePath.replace("%20", " ");
-			}
-			
 			filePathField.setText(filePath);
 			e.setDropCompleted(true);
 		});
