@@ -31,11 +31,12 @@ public class MessageBox {
 		scene.getStylesheets().add(GUI.class.getResource("Style.css").toExternalForm());
 		window.setScene(scene);
 		window.setMinWidth(100);
-		window.setResizable(false);	
 		layout.applyCss();
 		layout.layout();
-		window.setWidth(msg.widthProperty().getValue() + 80);
-		window.setHeight(msg.heightProperty().getValue() + 120 + closeBtn.heightProperty().getValue());
+		window.setMinWidth(msg.widthProperty().getValue() + 80);
+		window.setMaxWidth(msg.widthProperty().getValue() + 80);
+		window.setMinHeight(msg.heightProperty().getValue() + 120 + closeBtn.heightProperty().getValue());
+		window.setMaxHeight(msg.heightProperty().getValue() + 120 + closeBtn.heightProperty().getValue());
 		
 		window.showAndWait();
 	}
