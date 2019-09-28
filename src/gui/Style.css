@@ -1,0 +1,14 @@
+.root {
+    -fx-background-color: #383838;
+}
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+.button {
+    -fx-background-color: #E8E8E8;
+    -fx-text-fill: #000000;
+}
+#fileDrop {
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
