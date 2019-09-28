@@ -24,3 +24,5 @@ hs_err_pid*
 /bin/
 
 src/launch/workaroundMain.txt
+.classpath
+.project
