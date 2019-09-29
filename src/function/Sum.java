@@ -79,7 +79,8 @@ public class Sum {
 				}
 				break;
 			}
-			
+		
+		// Show exception
 		} catch (IOException e) {
 			MessageBox.display("Exception!", e.getMessage());;
 		}

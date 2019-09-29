@@ -30,7 +30,6 @@ public class MessageBox {
 		Scene scene = new Scene(layout, 100, 100);
 		scene.getStylesheets().add(GUI.class.getResource("Style.css").toExternalForm());
 		window.setScene(scene);
-		window.setMinWidth(100);
 		layout.applyCss();
 		layout.layout();
 		window.setMinWidth(msg.widthProperty().getValue() + 80);
